@@ -18,13 +18,6 @@
 
 /* _____________ Your Code Here _____________ */
 
-// type Replace<S extends string, From extends string, To extends string> =
-//   S extends `${From}${infer B}`
-//     ? `${To}${B}`
-//     : S extends `${infer A}${From}`
-//       ? `${A}${To}`
-//       : S extends `${infer A}${From}${infer B}` ? `${A}${To}${B}` : S
-
 type Replace<S extends string, From extends string, To extends string> =
   From extends ''
   ? S
